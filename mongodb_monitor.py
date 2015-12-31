@@ -4,14 +4,12 @@
 import json
 import commands
 import logging
-
-import os
 import re
 import socket
-import string
 import time
-import copy
 import traceback
+
+import requests
 
 logging.basicConfig(
     filename = '/tmp/mongodb_monitor-%s.log' % time.strftime('%Y-%m-%d'),
